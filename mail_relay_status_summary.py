@@ -13,6 +13,7 @@ def analyze_log(file_path):
     # 日付ごとにステータスの件数を集計する辞書
     daily_counts = defaultdict(lambda: defaultdict(int))
 
+    # ログファイルを読み込む
     with open(file_path, 'r') as file:
         for line in file:
             # 月と日付のパターンを探す
